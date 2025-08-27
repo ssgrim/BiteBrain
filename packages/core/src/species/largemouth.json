@@ -1,0 +1,16 @@
+{
+  "name": "Largemouth Bass",
+  "spawnTempMin": 60,
+  "spawnTempMax": 75,
+  "seasonalNotes": {
+    "spring": "Pre-spawn: fish transition areas, secondary points. Spawn: shallow flats with cover.",
+    "summer": "Post-spawn recovery, then deep structure. Early morning topwater.",
+    "fall": "Feeding up for winter, chase baitfish in shallows.",
+    "winter": "Deep, slow presentations. Rock piles and drop-offs."
+  },
+  "colorRules": {
+    "clear": ["natural", "green pumpkin", "watermelon"],
+    "stained": ["chartreuse", "white", "orange"],
+    "muddy": ["black", "bright colors", "loud rattles"]
+  }
+}

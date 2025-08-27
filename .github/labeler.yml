@@ -1,0 +1,49 @@
+# Labeler configuration for auto-labeling issues and PRs
+
+'phase-1':
+  - any: ['**/phase-1/**', '**/Phase 1/**']
+  - title: ['Phase 1', 'phase-1', 'Story 1\.']
+
+'phase-2':
+  - any: ['**/phase-2/**', '**/Phase 2/**']
+  - title: ['Phase 2', 'phase-2', 'Story 2\.']
+
+'phase-3':
+  - any: ['**/phase-3/**', '**/Phase 3/**']
+  - title: ['Phase 3', 'phase-3', 'Story 3\.']
+
+'epic-map':
+  - title: ['Map', 'map', 'Interactive Map', 'Epic 1.1']
+
+'epic-weather':
+  - title: ['Weather', 'weather', 'conditions', 'Epic 1.2']
+
+'epic-recommendations':
+  - title: ['Recommendation', 'recommendation', 'engine', 'Epic 1.3']
+
+'epic-tackle':
+  - title: ['Tackle', 'tackle', 'inventory', 'Epic 1.4']
+
+'epic-trip':
+  - title: ['Trip', 'trip', 'planning', 'logging', 'Epic 1.5']
+
+'frontend':
+  - any: ['apps/web/**', 'apps/mobile/**']
+
+'backend':
+  - any: ['services/api/**', 'packages/core/**']
+
+'infrastructure':
+  - any: ['infra/**', 'terraform/**']
+
+'documentation':
+  - any: ['docs/**', '**/*.md']
+
+'testing':
+  - any: ['**/*.test.*', '**/*.spec.*', '**/test/**']
+
+'high-priority':
+  - title: ['urgent', 'critical', 'blocking']
+
+'low-priority':
+  - title: ['nice-to-have', 'future', 'enhancement']
