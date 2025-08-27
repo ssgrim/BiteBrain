@@ -6,49 +6,62 @@ on:
   pull_request:
     types: [opened, edited, labeled, unlabeled, closed]
 
-jobs:
-  project-automation:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Auto-assign to project
-        uses: alex-page/github-project-automation-plus@v0.8.3
-        with:
-          project: BiteBrain Development
-          column: To Do
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Move user stories to appropriate column
-        uses: alex-page/github-project-automation-plus@v0.8.3
-        if: contains(github.event.issue.labels.*.name, 'user-story')
-        with:
-          project: BiteBrain Development
-          column: Sprint Backlog
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Move bugs to triage
-        uses: alex-page/github-project-automation-plus@v0.8.3
-        if: contains(github.event.issue.labels.*.name, 'bug')
-        with:
-          project: BiteBrain Development
-          column: Triage
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Move completed PRs
-        uses: alex-page/github-project-automation-plus@v0.8.3
-        if: github.event.pull_request.merged == true
-        with:
-          project: BiteBrain Development
-          column: Done
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+# Temporarily disabled due to GitHub Projects Classic deprecation
+# Will migrate to GitHub Projects v2 in future update
 
-  label-automation:
+jobs:
+  placeholder:
     runs-on: ubuntu-latest
-    if: github.event_name == 'issues' && github.event.action == 'opened'
     steps:
-      - name: Auto-label user stories
-        uses: github/issue-labeler@v3.4
-        if: contains(github.event.issue.title, '[Story')
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: .github/labeler.yml
-          enable-versioned-regex: 0
+      - name: Placeholder
+        run: echo "Project automation temporarily disabled due to GitHub Projects Classic deprecation"
+
+# Temporarily disabled due to GitHub Projects Classic deprecation
+# Will migrate to GitHub Projects v2 in future update
+
+# jobs:
+#   project-automation:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Auto-assign to project
+#         uses: alex-page/github-project-automation-plus@v0.8.3
+#         with:
+#           project: BiteBrain Development
+#           column: To Do
+#           repo-token: ${{ secrets.GITHUB_TOKEN }}
+#           
+#       - name: Move user stories to appropriate column
+#         uses: alex-page/github-project-automation-plus@v0.8.3
+#         if: contains(github.event.issue.labels.*.name, 'user-story')
+#         with:
+#           project: BiteBrain Development
+#           column: Sprint Backlog
+#           repo-token: ${{ secrets.GITHUB_TOKEN }}
+#           
+#       - name: Move bugs to triage
+#         uses: alex-page/github-project-automation-plus@v0.8.3
+#         if: contains(github.event.issue.labels.*.name, 'bug')
+#         with:
+#           project: BiteBrain Development
+#           column: Triage
+#           repo-token: ${{ secrets.GITHUB_TOKEN }}
+#           
+#       - name: Move completed PRs
+#         uses: alex-page/github-project-automation-plus@v0.8.3
+#         if: github.event.pull_request.merged == true
+#         with:
+#           project: BiteBrain Development
+#           column: Done
+#           repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+#   label-automation:
+#     runs-on: ubuntu-latest
+#     if: github.event_name == 'issues' && github.event.action == 'opened'
+#     steps:
+#       - name: Auto-label user stories
+#         uses: github/issue-labeler@v3.4
+#         if: contains(github.event.issue.title, '[Story')
+#         with:
+#           repo-token: ${{ secrets.GITHUB_TOKEN }}
+#           configuration-path: .github/labeler.yml
+#           enable-versioned-regex: 0

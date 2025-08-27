@@ -19,6 +19,8 @@ jobs:
           cache: 'pnpm'
       - run: pnpm -v
       - run: pnpm install --frozen-lockfile=false
+      # Fix react-native-screens build issue in CI
+      - run: pnpm add -g @react-native-community/bob || true
       - run: pnpm -w lint
       - name: Run tests
         run: pnpm test
