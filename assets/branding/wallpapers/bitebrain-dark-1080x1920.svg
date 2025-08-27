@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14213D"/>
+      <stop offset="100%" stop-color="#223657"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17334d"/>
+      <stop offset="100%" stop-color="#0F243A"/>
+    </linearGradient>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.16" />
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="100%" height="1152.0" fill="url(#sky)"/>
+
+  <!-- Subtle sun glow -->
+  <circle cx="540.0" cy="672.0" r="194.4" fill="#2b6cb0" opacity="0.1" filter="url(#softBlur)"/>
+
+  <!-- Distant hills -->
+  <path d="M0 1113.60 C 216.00 960.00, 432.00 1228.80, 648.00 1075.20
+           S 1026.00 1228.80, 1080.00 1152.00 L 1080 1920 L 0 1920 Z" fill="#1b2b44" opacity="0.25"/>
+
+  <!-- Treeline -->
+  <path d="M0 1056.0 L 4.5 918.0 L 9 1056.0 Z M36 1056.0 L 45.5 996.0 L 55 1056.0 Z M72 1056.0 L 77.5 964.0 L 83 1056.0 Z M108 1056.0 L 113.0 971.0 L 118 1056.0 Z M144 1056.0 L 148.5 905.0 L 153 1056.0 Z M180 1056.0 L 189.5 913.0 L 199 1056.0 Z M216 1056.0 L 220.5 930.0 L 225 1056.0 Z M252 1056.0 L 259.0 924.0 L 266 1056.0 Z M288 1056.0 L 292.0 995.0 L 296 1056.0 Z M324 1056.0 L 329.5 988.0 L 335 1056.0 Z M360 1056.0 L 368.0 970.0 L 376 1056.0 Z M396 1056.0 L 400.0 922.0 L 404 1056.0 Z M432 1056.0 L 437.5 928.0 L 443 1056.0 Z M468 1056.0 L 477.0 908.0 L 486 1056.0 Z M504 1056.0 L 512.0 910.0 L 520 1056.0 Z M540 1056.0 L 545.5 946.0 L 551 1056.0 Z M576 1056.0 L 584.5 942.0 L 593 1056.0 Z M612 1056.0 L 622.0 964.0 L 632 1056.0 Z M648 1056.0 L 658.0 999.0 L 668 1056.0 Z M684 1056.0 L 693.5 979.0 L 703 1056.0 Z M720 1056.0 L 726.5 945.0 L 733 1056.0 Z M756 1056.0 L 761.0 964.0 L 766 1056.0 Z M792 1056.0 L 802.0 972.0 L 812 1056.0 Z M828 1056.0 L 832.5 956.0 L 837 1056.0 Z M864 1056.0 L 871.0 988.0 L 878 1056.0 Z M900 1056.0 L 906.5 987.0 L 913 1056.0 Z M936 1056.0 L 944.5 955.0 L 953 1056.0 Z M972 1056.0 L 982.0 966.0 L 992 1056.0 Z M1008 1056.0 L 1017.5 994.0 L 1027 1056.0 Z M1044 1056.0 L 1052.0 941.0 L 1060 1056.0 Z M1080 1056.0 L 1087.0 984.0 L 1094 1056.0 Z" fill="#1b2b44" opacity="0.35"/>
+
+  <!-- Water -->
+  <rect y="1152.0" width="100%" height="768.0" fill="url(#water)"/>
+
+  <!-- Gentle waves layers -->
+  <path d="M 0 1344.0 Q 90.00 1382.38, 180.00 1344.00 Q 270.00 1341.76, 360.00 1344.00 Q 450.00 1305.75, 540.00 1344.00 Q 630.00 1348.48, 720.00 1344.00 Q 810.00 1381.99, 900.00 1344.00 Q 990.00 1337.31, 1080.00 1344.00 L 1080 1920 L 0 1920 Z" fill="#ffffff" opacity="0.10"/>
+  <path d="M 0 1497.6000000000001 Q 90.00 1487.50, 180.00 1497.60 Q 270.00 1481.74, 360.00 1497.60 Q 450.00 1526.37, 540.00 1497.60 Q 630.00 1479.60, 720.00 1497.60 Q 810.00 1490.02, 900.00 1497.60 Q 990.00 1524.52, 1080.00 1497.60 L 1080 1920 L 0 1920 Z" fill="#ffffff" opacity="0.07"/>
+  <path d="M 0 1651.2 Q 90.00 1628.56, 180.00 1651.20 Q 270.00 1673.97, 360.00 1651.20 Q 450.00 1630.93, 540.00 1651.20 Q 630.00 1666.63, 720.00 1651.20 Q 810.00 1642.40, 900.00 1651.20 Q 990.00 1652.36, 1080.00 1651.20 L 1080 1920 L 0 1920 Z" fill="#ffffff" opacity="0.05"/>
+
+  <!-- Foreground reeds & cattails -->
+  <path d="M54 1766.4 q 4 -58.0 0 -116" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M99 1766.4 q -4 -94.0 0 -188" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M144 1766.4 q -4 -53.5 0 -107" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M189 1766.4 q -4 -58.0 0 -116" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M234 1766.4 q 4 -96.5 0 -193" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="231.95999999999998" y="1538.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M279 1766.4 q -4 -94.5 0 -189" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="274.56" y="1542.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M324 1766.4 q 4 -74.5 0 -149" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M369 1766.4 q -4 -57.0 0 -114" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="364.56" y="1617.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M414 1766.4 q -4 -79.0 0 -158" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="409.56" y="1573.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M459 1766.4 q -4 -82.5 0 -165" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M504 1766.4 q -4 -55.0 0 -110" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M549 1766.4 q 6 -88.0 0 -176" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="547.56" y="1555.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M594 1766.4 q 4 -75.0 0 -150" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="591.96" y="1581.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M639 1766.4 q 6 -111.5 0 -223" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M684 1766.4 q -4 -106.5 0 -213" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="679.56" y="1518.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M729 1766.4 q 4 -79.5 0 -159" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<path d="M774 1766.4 q 6 -102.5 0 -205" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="772.56" y="1526.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M819 1766.4 q 6 -65.5 0 -131" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="817.56" y="1600.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M864 1766.4 q -6 -54.0 0 -108" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="858.96" y="1623.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M909 1766.4 q 6 -68.0 0 -136" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="907.56" y="1595.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M954 1766.4 q 6 -97.0 0 -194" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+<rect x="952.56" y="1537.8400000000001" width="6.48" height="38.4" rx="3.24" fill="#20485a" opacity="0.6"/>
+<path d="M999 1766.4 q 4 -107.5 0 -215" stroke="#1f3a4a" stroke-width="1.35" fill="none" stroke-linecap="round"/>
+
+  <!-- Soft fog strip to reduce contrast for UI readability -->
+  <rect y="1152.0" width="100%" height="768.0" fill="rgba(255,255,255,0.05)"/>
+</svg>

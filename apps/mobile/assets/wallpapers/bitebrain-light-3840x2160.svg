@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CFE7F6"/>
+      <stop offset="100%" stop-color="#EAF3F9"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CFE8EA"/>
+      <stop offset="100%" stop-color="#DCEFF4"/>
+    </linearGradient>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7.68" />
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="100%" height="1296.0" fill="url(#sky)"/>
+
+  <!-- Subtle sun glow -->
+  <circle cx="1920.0" cy="756.0" r="388.8" fill="#FCD9A3" opacity="0.18" filter="url(#softBlur)"/>
+
+  <!-- Distant hills -->
+  <path d="M0 1252.80 C 768.00 1080.00, 1536.00 1382.40, 2304.00 1209.60
+           S 3648.00 1382.40, 3840.00 1296.00 L 3840 2160 L 0 2160 Z" fill="#6A8599" opacity="0.25"/>
+
+  <!-- Treeline -->
+  <path d="M0 1188.0 L 18.5 1043.0 L 37 1188.0 Z M128 1188.0 L 151.5 1121.0 L 175 1188.0 Z M256 1188.0 L 278.0 1093.0 L 300 1188.0 Z M384 1188.0 L 402.0 1107.0 L 420 1188.0 Z M512 1188.0 L 544.0 1038.0 L 576 1188.0 Z M640 1188.0 L 673.5 1113.0 L 707 1188.0 Z M768 1188.0 L 784.0 1070.0 L 800 1188.0 Z M896 1188.0 L 913.5 1121.0 L 931 1188.0 Z M1024 1188.0 L 1046.0 1097.0 L 1068 1188.0 Z M1152 1188.0 L 1186.0 1060.0 L 1220 1188.0 Z M1280 1188.0 L 1312.5 1121.0 L 1345 1188.0 Z M1408 1188.0 L 1445.5 1099.0 L 1483 1188.0 Z M1536 1188.0 L 1573.0 1041.0 L 1610 1188.0 Z M1664 1188.0 L 1692.0 1055.0 L 1720 1188.0 Z M1792 1188.0 L 1821.0 1096.0 L 1850 1188.0 Z M1920 1188.0 L 1943.5 1049.0 L 1967 1188.0 Z M2048 1188.0 L 2063.0 1021.0 L 2078 1188.0 Z M2176 1188.0 L 2196.0 1027.0 L 2216 1188.0 Z M2304 1188.0 L 2332.5 1035.0 L 2361 1188.0 Z M2432 1188.0 L 2455.5 1081.0 L 2479 1188.0 Z M2560 1188.0 L 2581.5 1105.0 L 2603 1188.0 Z M2688 1188.0 L 2713.5 1027.0 L 2739 1188.0 Z M2816 1188.0 L 2833.5 1111.0 L 2851 1188.0 Z M2944 1188.0 L 2962.0 1076.0 L 2980 1188.0 Z M3072 1188.0 L 3098.0 1079.0 L 3124 1188.0 Z M3200 1188.0 L 3223.0 1047.0 L 3246 1188.0 Z M3328 1188.0 L 3344.0 1021.0 L 3360 1188.0 Z M3456 1188.0 L 3485.5 1031.0 L 3515 1188.0 Z M3584 1188.0 L 3602.5 1056.0 L 3621 1188.0 Z M3712 1188.0 L 3729.5 1076.0 L 3747 1188.0 Z M3840 1188.0 L 3864.0 1054.0 L 3888 1188.0 Z" fill="#6A8599" opacity="0.35"/>
+
+  <!-- Water -->
+  <rect y="1296.0" width="100%" height="864.0" fill="url(#water)"/>
+
+  <!-- Gentle waves layers -->
+  <path d="M 0 1512.0 Q 320.00 1555.18, 640.00 1512.00 Q 960.00 1509.48, 1280.00 1512.00 Q 1600.00 1468.97, 1920.00 1512.00 Q 2240.00 1517.03, 2560.00 1512.00 Q 2880.00 1554.74, 3200.00 1512.00 Q 3520.00 1504.47, 3840.00 1512.00 L 3840 2160 L 0 2160 Z" fill="#ffffff" opacity="0.10"/>
+  <path d="M 0 1684.8 Q 320.00 1673.43, 640.00 1684.80 Q 960.00 1666.96, 1280.00 1684.80 Q 1600.00 1717.17, 1920.00 1684.80 Q 2240.00 1664.55, 2560.00 1684.80 Q 2880.00 1676.27, 3200.00 1684.80 Q 3520.00 1715.09, 3840.00 1684.80 L 3840 2160 L 0 2160 Z" fill="#ffffff" opacity="0.07"/>
+  <path d="M 0 1857.6 Q 320.00 1832.13, 640.00 1857.60 Q 960.00 1883.21, 1280.00 1857.60 Q 1600.00 1834.80, 1920.00 1857.60 Q 2240.00 1874.96, 2560.00 1857.60 Q 2880.00 1847.70, 3200.00 1857.60 Q 3520.00 1858.91, 3840.00 1857.60 L 3840 2160 L 0 2160 Z" fill="#ffffff" opacity="0.05"/>
+
+  <!-- Foreground reeds & cattails -->
+  <path d="M192 1987.2 q -4 -100.0 0 -200" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M352 1987.2 q -4 -59.5 0 -119" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M512 1987.2 q -4 -64.0 0 -128" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M672 1987.2 q 4 -102.5 0 -205" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="661.6800000000001" y="1743.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M832 1987.2 q -4 -100.5 0 -201" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="819.28" y="1747.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M992 1987.2 q 4 -80.5 0 -161" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M1152 1987.2 q -4 -63.0 0 -126" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="1139.28" y="1822.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M1312 1987.2 q -4 -85.0 0 -170" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="1299.28" y="1778.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M1472 1987.2 q -4 -88.5 0 -177" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M1632 1987.2 q -4 -61.0 0 -122" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M1792 1987.2 q 6 -94.0 0 -188" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="1782.28" y="1760.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M1952 1987.2 q 4 -81.0 0 -162" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="1941.68" y="1786.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M2112 1987.2 q 6 -117.5 0 -235" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M2272 1987.2 q -4 -112.5 0 -225" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="2259.28" y="1723.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M2432 1987.2 q 4 -85.5 0 -171" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M2592 1987.2 q 6 -108.5 0 -217" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="2582.28" y="1731.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M2752 1987.2 q 6 -71.5 0 -143" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="2742.28" y="1805.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M2912 1987.2 q -6 -60.0 0 -120" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="2898.68" y="1828.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M3072 1987.2 q 6 -74.0 0 -148" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="3062.28" y="1800.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M3232 1987.2 q 6 -103.0 0 -206" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<rect x="3222.28" y="1742.3200000000002" width="23.04" height="43.2" rx="11.52" fill="#869E8C" opacity="0.6"/>
+<path d="M3392 1987.2 q 4 -113.5 0 -227" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+<path d="M3552 1987.2 q -6 -55.0 0 -110" stroke="#7DA1A8" stroke-width="4.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Soft fog strip to reduce contrast for UI readability -->
+  <rect y="1296.0" width="100%" height="864.0" fill="rgba(255,255,255,0.35)"/>
+</svg>

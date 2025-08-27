@@ -28,21 +28,21 @@ export const DevBanner: React.FC<DevBannerProps> = ({
 
 const styles = StyleSheet.create({
   banner: {
-    backgroundColor: '#FBBF24', // yellow-400
+    backgroundColor: '#B8E986', // zombie-lime
     paddingVertical: 8,
     paddingHorizontal: 16,
     paddingTop: Constants.statusBarHeight + 8,
     borderBottomWidth: 1,
-    borderBottomColor: '#F59E0B', // yellow-500
+    borderBottomColor: '#2EC4B6', // sea-teal
   },
   mainText: {
-    color: '#000000',
+    color: '#0B132B', // primary-navy
     fontSize: 14,
     fontWeight: '600',
     textAlign: 'center',
   },
   subText: {
-    color: '#000000',
+    color: '#0B132B', // primary-navy
     fontSize: 12,
     textAlign: 'center',
     opacity: 0.75,

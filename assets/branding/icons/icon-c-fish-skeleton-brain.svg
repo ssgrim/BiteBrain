@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+
+
+<circle cx="256" cy="256" r="220" fill="#EEF2F7" stroke="#0B132B" stroke-width="12"/>
+<path d="M120 256h240" stroke="#0B132B" stroke-width="10" stroke-linecap="round"/>
+<path d="M150 230l0 52" stroke="#0B132B" stroke-width="8" stroke-linecap="round"/><path d="M180 230l0 52" stroke="#0B132B" stroke-width="8" stroke-linecap="round"/><path d="M210 230l0 52" stroke="#0B132B" stroke-width="8" stroke-linecap="round"/><path d="M240 230l0 52" stroke="#0B132B" stroke-width="8" stroke-linecap="round"/><path d="M270 230l0 52" stroke="#0B132B" stroke-width="8" stroke-linecap="round"/><path d="M300 230l0 52" stroke="#0B132B" stroke-width="8" stroke-linecap="round"/><path d="M330 230l0 52" stroke="#0B132B" stroke-width="8" stroke-linecap="round"/>
+<circle cx="370" cy="256" r="36" fill="#2EC4B6" stroke="#0B132B" stroke-width="8"/>
+<circle cx="380" cy="246" r="6" fill="#0B132B"/>
+<circle cx="362" cy="244" r="10" fill="#FF6B6B" stroke="#0B132B" stroke-width="4"/>
+<path d="M100 216l-40 40 40 40" fill="none" stroke="#0B132B" stroke-width="10" stroke-linecap="round"/>
+
+</svg>
