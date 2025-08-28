@@ -1,6 +1,7 @@
 {
   "name": "@bitebrain/api",
   "version": "0.1.0",
+  "type": "module",
   "main": "dist/handler.js",
   "scripts": {
     "build": "tsc",

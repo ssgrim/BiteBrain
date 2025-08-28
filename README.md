@@ -170,8 +170,12 @@ The core recommendation engine uses a rule-based scoring system considering:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is proprietary software owned by BiteBrain Technologies. All rights reserved.
 
-## 🎣 Happy Fishing!
+For licensing inquiries, please contact: `licensing@bitebrain.tech`
+
+See the [LICENSE](LICENSE) file for details.
+
+## 🎣 Happy Fishing
 
 Built with ❤️ for anglers by anglers. May your lines be tight and your batteries never die!
