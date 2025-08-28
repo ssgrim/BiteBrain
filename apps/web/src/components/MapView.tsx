@@ -35,7 +35,6 @@ export const MapView: React.FC<MapViewProps> = ({
   const [userLocation, setUserLocation] = useState<{lat: number; lng: number} | null>(null);
   const [showPopup, setShowPopup] = useState(false);
   const [fishingSpots, setFishingSpots] = useState<FishingSpot[]>([]);
-  const [selectedSpot, setSelectedSpot] = useState<FishingSpot | null>(null);
   const [isOffline, setIsOffline] = useState(false);
   const [showOfflineInterface, setShowOfflineInterface] = useState(false);
   const [hasOfflineData, setHasOfflineData] = useState(false);
@@ -119,33 +118,6 @@ export const MapView: React.FC<MapViewProps> = ({
     // Future: Add fishing spot markers here
   };
 
-  // Custom map style emphasizing water bodies
-  const mapStyle = {
-    version: 8,
-    sources: {
-      'mapbox-satellite': {
-        type: 'raster',
-        url: 'mapbox://mapbox.satellite',
-        tileSize: 256,
-      },
-      'mapbox-terrain': {
-        type: 'raster-dem',
-        url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
-        tileSize: 512,
-        maxzoom: 14,
-      },
-    },
-    layers: [
-      {
-        id: 'satellite',
-        type: 'raster',
-        source: 'mapbox-satellite',
-        layout: { visibility: 'visible' },
-        paint: { 'raster-opacity': 0.7 },
-      },
-    ],
-  };
-
   const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
   // If offline with cached data, use OfflineMap
@@ -174,7 +146,6 @@ export const MapView: React.FC<MapViewProps> = ({
           <FishingSpotMarker
             key={spot.id}
             spot={spot}
-            onClick={(spot) => setSelectedSpot(spot)}
           />
         ))}
 
@@ -239,7 +210,6 @@ export const MapView: React.FC<MapViewProps> = ({
           <FishingSpotMarker
             key={spot.id}
             spot={spot}
-            onClick={(spot) => setSelectedSpot(spot)}
           />
         ))}
 

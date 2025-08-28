@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { OfflineMapService, OfflineRegion, offlineMapService } from '@bitebrain/core';
+import { OfflineRegion, offlineMapService } from '@bitebrain/core';
 
 interface OfflineDownloadInterfaceProps {
   isOpen: boolean;
@@ -24,7 +24,6 @@ export const OfflineDownloadInterface: React.FC<OfflineDownloadInterfaceProps> =
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState<DownloadProgress | null>(null);
   const [storageInfo, setStorageInfo] = useState<{ used: number; available: number } | null>(null);
-  const [selectedRegion, setSelectedRegion] = useState<string>('');
 
   useEffect(() => {
     if (isOpen) {
@@ -55,7 +54,7 @@ export const OfflineDownloadInterface: React.FC<OfflineDownloadInterfaceProps> =
 
   const handleDownloadRegion = async (regionType: string) => {
     if (!currentLocation) {
-      alert('Location not available. Please enable location services.');
+      window.alert('Location not available. Please enable location services.');
       return;
     }
 
@@ -112,17 +111,17 @@ export const OfflineDownloadInterface: React.FC<OfflineDownloadInterfaceProps> =
         regionName,
         bounds,
         zoomLevels,
-        (progress) => {
+        (progress: { completed: number; total: number; currentTile: string }) => {
           setDownloadProgress(progress);
         }
       );
 
       setRegions(prev => [...prev, region]);
       await loadStorageInfo();
-      alert(`Successfully downloaded ${region.tiles.length} tiles for ${regionName}`);
+      window.alert(`Successfully downloaded ${region.tiles.length} tiles for ${regionName}`);
     } catch (error) {
       console.error('Download failed:', error);
-      alert('Download failed. Please check your internet connection and try again.');
+      window.alert('Download failed. Please check your internet connection and try again.');
     } finally {
       setIsDownloading(false);
       setDownloadProgress(null);
@@ -136,7 +135,7 @@ export const OfflineDownloadInterface: React.FC<OfflineDownloadInterfaceProps> =
       await loadStorageInfo();
     } catch (error) {
       console.error('Failed to delete region:', error);
-      alert('Failed to delete region');
+      window.alert('Failed to delete region');
     }
   };
 

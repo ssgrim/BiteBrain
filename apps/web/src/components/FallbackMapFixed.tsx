@@ -11,7 +11,6 @@ interface FallbackMapProps {
 export const FallbackMap: React.FC<FallbackMapProps> = ({
   latitude = 39.8283,
   longitude = -98.5795,
-  zoom = 4,
   className = '',
 }) => {
   const [userLocation, setUserLocation] = useState<{lat: number; lng: number} | null>(null);

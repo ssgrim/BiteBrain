@@ -11,11 +11,9 @@ interface FallbackMapProps {
 export const FallbackMap: React.FC<FallbackMapProps> = ({
   latitude = 39.8283,
   longitude = -98.5795,
-  zoom = 4,
   className = '',
 }) => {
   const [userLocation, setUserLocation] = useState<{lat: number; lng: number} | null>(null);
-  const [mapCenter, setMapCenter] = useState({ lat: latitude, lng: longitude });
   const [fishingSpots, setFishingSpots] = useState<FishingSpot[]>([]);
   const [selectedSpot, setSelectedSpot] = useState<FishingSpot | null>(null);
 
@@ -27,7 +25,6 @@ export const FallbackMap: React.FC<FallbackMapProps> = ({
           const userLng = position.coords.longitude;
           
           setUserLocation({ lat: userLat, lng: userLng });
-          setMapCenter({ lat: userLat, lng: userLng });
 
           // Load nearby fishing spots
           const nearbySpots = getFishingSpotsInRadius(userLat, userLng, 50);

@@ -3,4 +3,4 @@ const nextConfig = {
   transpilePackages: ["@bitebrain/ui", "@bitebrain/core"],
 }
 
-module.exports = nextConfig
+export default nextConfig

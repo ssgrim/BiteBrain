@@ -16,7 +16,6 @@ export const SolunarCalendar: React.FC<SolunarCalendarProps> = ({
 }) => {
   const [solunarData, setSolunarData] = useState<SolunarDay[]>([]);
   const [currentPeriod, setCurrentPeriod] = useState<SolunarPeriod | null>(null);
-  const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,7 +23,7 @@ export const SolunarCalendar: React.FC<SolunarCalendarProps> = ({
       setLoading(true);
       try {
         const service = new SolunarService({ latitude, longitude, timezone });
-        const weekData = service.calculateWeek(selectedDate);
+        const weekData = service.calculateWeek(new Date());
         setSolunarData(weekData);
 
         const current = service.getCurrentPeriod();
@@ -37,7 +36,7 @@ export const SolunarCalendar: React.FC<SolunarCalendarProps> = ({
     };
 
     loadSolunarData();
-  }, [latitude, longitude, timezone, selectedDate]);
+  }, [latitude, longitude, timezone]);
 
   const formatTime = (date: Date): string => {
     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -56,13 +55,6 @@ export const SolunarCalendar: React.FC<SolunarCalendarProps> = ({
     if (rating >= 6) return 'text-yellow-600 bg-yellow-100';
     if (rating >= 4) return 'text-orange-600 bg-orange-100';
     return 'text-red-600 bg-red-100';
-  };
-
-  const getPeriodColor = (period: SolunarPeriod): string => {
-    if (period.type === 'major') {
-      return period.confidence > 0.8 ? 'bg-blue-500' : 'bg-blue-400';
-    }
-    return period.confidence > 0.7 ? 'bg-purple-500' : 'bg-purple-400';
   };
 
   const isCurrentPeriod = (period: SolunarPeriod): boolean => {
@@ -170,7 +162,7 @@ export const SolunarCalendar: React.FC<SolunarCalendarProps> = ({
 
               {/* Periods */}
               <div className="space-y-2">
-                {day.periods.map((period, periodIndex) => (
+                {day.periods.map((period: SolunarPeriod, periodIndex: number) => (
                   <div
                     key={periodIndex}
                     className={`flex items-center justify-between p-2 rounded text-sm ${
