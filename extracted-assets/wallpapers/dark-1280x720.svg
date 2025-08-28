@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+    
+<style>
+  @keyframes sway1 { 0%,100% { transform: rotate(-0.5deg); } 50% { transform: rotate(0.6deg); } }
+  @keyframes sway2 { 0%,100% { transform: rotate(0.6deg); } 50% { transform: rotate(-0.6deg); } }
+  @keyframes shimmer { 0% { transform: translateX(-30%); opacity:.10; } 50% { opacity:.20; } 100% { transform: translateX(130%); opacity:.10; } }
+  @keyframes ripple { 0% { r:1; opacity:.35; } 100% { r:140; opacity:0; } }
+  @keyframes fall { 0% { transform: translate(0,-10px) rotate(0deg); opacity:0; } 
+                    10% { opacity:.8; } 
+                    100% { transform: translate(-120px, 460px) rotate(200deg); opacity:0; } }
+  @keyframes jump { 0% { transform: translate(0,0) scale(1); opacity:0; }
+                    10% { opacity:1; }
+                    40% { transform: translate(80px,-80px) scale(1.02); }
+                    60% { transform: translate(140px,-10px) scale(1); }
+                    100% { transform: translate(200px,0) scale(1); opacity:0; } }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+</style>
+
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#14213D"/>
+        <stop offset="100%" stop-color="#223657"/>
+      </linearGradient>
+      <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#17334d"/>
+        <stop offset="100%" stop-color="#0F243A"/>
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="446.4" fill="url(#sky)"/>
+    <path d="M0 417.60 C 281.60 374.40, 563.20 475.20, 819.20 417.60
+             S 1228.80 475.20, 1280.00 432.00 L 1280 720 L 0 720 Z" fill="#000" opacity="0.12"/>
+    <g opacity=".6">
+      <g transform="translate(0,0)" style="transform-origin: 10% 418px; animation: sway1 6.5s ease-in-out infinite;">
+        <path d="M0 417.59999999999997 L 7.0 376.59999999999997 L 14 417.59999999999997 Z M45 417.59999999999997 L 56.0 371.59999999999997 L 67 417.59999999999997 Z M90 417.59999999999997 L 96.5 393.59999999999997 L 103 417.59999999999997 Z M135 417.59999999999997 L 141.5 362.59999999999997 L 148 417.59999999999997 Z M180 417.59999999999997 L 190.5 373.59999999999997 L 201 417.59999999999997 Z M225 417.59999999999997 L 235.0 393.59999999999997 L 245 417.59999999999997 Z M270 417.59999999999997 L 276.0 383.59999999999997 L 282 417.59999999999997 Z M315 417.59999999999997 L 324.0 391.59999999999997 L 333 417.59999999999997 Z M360 417.59999999999997 L 366.5 370.59999999999997 L 373 417.59999999999997 Z M405 417.59999999999997 L 411.5 381.59999999999997 L 418 417.59999999999997 Z M450 417.59999999999997 L 459.0 361.59999999999997 L 468 417.59999999999997 Z M495 417.59999999999997 L 507.5 393.59999999999997 L 520 417.59999999999997 Z M540 417.59999999999997 L 546.5 360.59999999999997 L 553 417.59999999999997 Z M585 417.59999999999997 L 596.0 382.59999999999997 L 607 417.59999999999997 Z M630 417.59999999999997 L 640.5 393.59999999999997 L 651 417.59999999999997 Z M675 417.59999999999997 L 681.0 371.59999999999997 L 687 417.59999999999997 Z M720 417.59999999999997 L 726.0 382.59999999999997 L 732 417.59999999999997 Z M765 417.59999999999997 L 777.5 361.59999999999997 L 790 417.59999999999997 Z M810 417.59999999999997 L 818.0 388.59999999999997 L 826 417.59999999999997 Z M855 417.59999999999997 L 862.0 370.59999999999997 L 869 417.59999999999997 Z M900 417.59999999999997 L 906.5 362.59999999999997 L 913 417.59999999999997 Z M945 417.59999999999997 L 953.0 360.59999999999997 L 961 417.59999999999997 Z M990 417.59999999999997 L 1002.5 361.59999999999997 L 1015 417.59999999999997 Z M1035 417.59999999999997 L 1041.5 385.59999999999997 L 1048 417.59999999999997 Z M1080 417.59999999999997 L 1091.0 360.59999999999997 L 1102 417.59999999999997 Z M1125 417.59999999999997 L 1133.5 384.59999999999997 L 1142 417.59999999999997 Z M1170 417.59999999999997 L 1180.0 390.59999999999997 L 1190 417.59999999999997 Z M1215 417.59999999999997 L 1225.5 392.59999999999997 L 1236 417.59999999999997 Z M1260 417.59999999999997 L 1270.5 393.59999999999997 L 1281 417.59999999999997 Z" fill="#1c2e47"/>
+      </g>
+      <g transform="translate(0,0)" style="transform-origin: 60% 418px; animation: sway2 7.5s ease-in-out infinite;">
+        <path d="M0 417.59999999999997 L 7.0 376.59999999999997 L 14 417.59999999999997 Z M45 417.59999999999997 L 56.0 371.59999999999997 L 67 417.59999999999997 Z M90 417.59999999999997 L 96.5 393.59999999999997 L 103 417.59999999999997 Z M135 417.59999999999997 L 141.5 362.59999999999997 L 148 417.59999999999997 Z M180 417.59999999999997 L 190.5 373.59999999999997 L 201 417.59999999999997 Z M225 417.59999999999997 L 235.0 393.59999999999997 L 245 417.59999999999997 Z M270 417.59999999999997 L 276.0 383.59999999999997 L 282 417.59999999999997 Z M315 417.59999999999997 L 324.0 391.59999999999997 L 333 417.59999999999997 Z M360 417.59999999999997 L 366.5 370.59999999999997 L 373 417.59999999999997 Z M405 417.59999999999997 L 411.5 381.59999999999997 L 418 417.59999999999997 Z M450 417.59999999999997 L 459.0 361.59999999999997 L 468 417.59999999999997 Z M495 417.59999999999997 L 507.5 393.59999999999997 L 520 417.59999999999997 Z M540 417.59999999999997 L 546.5 360.59999999999997 L 553 417.59999999999997 Z M585 417.59999999999997 L 596.0 382.59999999999997 L 607 417.59999999999997 Z M630 417.59999999999997 L 640.5 393.59999999999997 L 651 417.59999999999997 Z M675 417.59999999999997 L 681.0 371.59999999999997 L 687 417.59999999999997 Z M720 417.59999999999997 L 726.0 382.59999999999997 L 732 417.59999999999997 Z M765 417.59999999999997 L 777.5 361.59999999999997 L 790 417.59999999999997 Z M810 417.59999999999997 L 818.0 388.59999999999997 L 826 417.59999999999997 Z M855 417.59999999999997 L 862.0 370.59999999999997 L 869 417.59999999999997 Z M900 417.59999999999997 L 906.5 362.59999999999997 L 913 417.59999999999997 Z M945 417.59999999999997 L 953.0 360.59999999999997 L 961 417.59999999999997 Z M990 417.59999999999997 L 1002.5 361.59999999999997 L 1015 417.59999999999997 Z M1035 417.59999999999997 L 1041.5 385.59999999999997 L 1048 417.59999999999997 Z M1080 417.59999999999997 L 1091.0 360.59999999999997 L 1102 417.59999999999997 Z M1125 417.59999999999997 L 1133.5 384.59999999999997 L 1142 417.59999999999997 Z M1170 417.59999999999997 L 1180.0 390.59999999999997 L 1190 417.59999999999997 Z M1215 417.59999999999997 L 1225.5 392.59999999999997 L 1236 417.59999999999997 Z M1260 417.59999999999997 L 1270.5 393.59999999999997 L 1281 417.59999999999997 Z" fill="#1c2e47" opacity=".5"/>
+      </g>
+    </g>
+    <rect y="446.4" width="100%" height="273.6" fill="url(#water)"/>
+    <path d="M 0 518.4 Q 106.7 530.5, 213.3 518.4 Q 320.0 531.5, 426.7 518.4 Q 533.3 520.4, 640.0 518.4 Q 746.7 507.5, 853.3 518.4 Q 960.0 504.6, 1066.7 518.4 Q 1173.3 514.4, 1280.0 518.4 L 1280 720 L 0 720 Z" fill="#fff" opacity=".06"/>
+    <path d="M 0 576.0 Q 106.7 585.8, 213.3 576.0 Q 320.0 577.5, 426.7 576.0 Q 533.3 567.8, 640.0 576.0 Q 746.7 565.6, 853.3 576.0 Q 960.0 573.0, 1066.7 576.0 Q 1173.3 583.1, 1280.0 576.0 L 1280 720 L 0 720 Z" fill="#fff" opacity=".05"/>
+    <g stroke="#204257" stroke-width="1.4222222222222223" stroke-linecap="round" opacity=".8">
+      <path d="M76 676.8 q -8 -36.0 0 -86.4" style="transform-origin:76px 676.8px; animation: sway2 6.9s ease-in-out 0.8s infinite;"/><path d="M125 676.8 q 5 -36.0 0 -86.4" style="transform-origin:125px 676.8px; animation: sway2 6.8s ease-in-out 0.2s infinite;"/><path d="M174 676.8 q -8 -36.0 0 -86.4" style="transform-origin:174px 676.8px; animation: sway2 6.9s ease-in-out 1.2s infinite;"/><path d="M223 676.8 q -8 -36.0 0 -86.4" style="transform-origin:223px 676.8px; animation: sway2 7.6s ease-in-out 0.3s infinite;"/><path d="M272 676.8 q -8 -36.0 0 -86.4" style="transform-origin:272px 676.8px; animation: sway2 6.2s ease-in-out 0.7s infinite;"/><path d="M321 676.8 q 8 -36.0 0 -86.4" style="transform-origin:321px 676.8px; animation: sway2 6.4s ease-in-out 1.4s infinite;"/><path d="M370 676.8 q 8 -36.0 0 -86.4" style="transform-origin:370px 676.8px; animation: sway2 6.6s ease-in-out 1.4s infinite;"/><path d="M419 676.8 q 8 -36.0 0 -86.4" style="transform-origin:419px 676.8px; animation: sway2 6.6s ease-in-out 0.7s infinite;"/><path d="M468 676.8 q 5 -36.0 0 -86.4" style="transform-origin:468px 676.8px; animation: sway2 6.1s ease-in-out 0.1s infinite;"/><path d="M517 676.8 q 8 -36.0 0 -86.4" style="transform-origin:517px 676.8px; animation: sway2 6.0s ease-in-out 0.1s infinite;"/><path d="M566 676.8 q -5 -36.0 0 -86.4" style="transform-origin:566px 676.8px; animation: sway2 7.1s ease-in-out 0.5s infinite;"/><path d="M615 676.8 q -8 -36.0 0 -86.4" style="transform-origin:615px 676.8px; animation: sway2 6.4s ease-in-out 0.3s infinite;"/><path d="M664 676.8 q 5 -36.0 0 -86.4" style="transform-origin:664px 676.8px; animation: sway2 7.7s ease-in-out 0.5s infinite;"/><path d="M713 676.8 q 5 -36.0 0 -86.4" style="transform-origin:713px 676.8px; animation: sway2 6.5s ease-in-out 0.3s infinite;"/><path d="M762 676.8 q -5 -36.0 0 -86.4" style="transform-origin:762px 676.8px; animation: sway2 7.6s ease-in-out 0.6s infinite;"/><path d="M811 676.8 q -8 -36.0 0 -86.4" style="transform-origin:811px 676.8px; animation: sway2 7.4s ease-in-out 1.3s infinite;"/><path d="M860 676.8 q -5 -36.0 0 -86.4" style="transform-origin:860px 676.8px; animation: sway2 6.8s ease-in-out 1.5s infinite;"/><path d="M909 676.8 q -8 -36.0 0 -86.4" style="transform-origin:909px 676.8px; animation: sway2 7.8s ease-in-out 0.7s infinite;"/><path d="M958 676.8 q 8 -36.0 0 -86.4" style="transform-origin:958px 676.8px; animation: sway2 7.3s ease-in-out 1.4s infinite;"/><path d="M1007 676.8 q -5 -36.0 0 -86.4" style="transform-origin:1007px 676.8px; animation: sway2 6.3s ease-in-out 0.1s infinite;"/><path d="M1056 676.8 q 8 -36.0 0 -86.4" style="transform-origin:1056px 676.8px; animation: sway2 7.5s ease-in-out 0.7s infinite;"/><path d="M1105 676.8 q 5 -36.0 0 -86.4" style="transform-origin:1105px 676.8px; animation: sway2 6.1s ease-in-out 0.4s infinite;"/><path d="M1154 676.8 q 5 -36.0 0 -86.4" style="transform-origin:1154px 676.8px; animation: sway2 6.1s ease-in-out 0.4s infinite;"/><path d="M1203 676.8 q 8 -36.0 0 -86.4" style="transform-origin:1203px 676.8px; animation: sway2 6.1s ease-in-out 0.5s infinite;"/>
+    </g>
+    <defs>
+      <clipPath id="waterClip"><rect x="0" y="446.4" width="1280" height="273.6"/></clipPath>
+      <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#9ad7ff" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#9ad7ff" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#9ad7ff" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g clip-path="url(#waterClip)" opacity=".25">
+      <rect x="-384.0" y="503.99999999999994" width="768.0" height="28.8" fill="url(#glint)" style="animation: shimmer 7s ease-in-out infinite;"/>
+    </g>
+    <g transform="translate(320.0,518.4)">
+      <g style="animation: jump 5.5s ease-in-out 1.5s infinite;">
+        <path d="M0 0 C 14 -8, 24 -14, 30 -14 C 44 -10, 52 4, 44 12 C 32 18, 18 12, 0 0 Z" fill="#2EC4B6" stroke="#0B132B" stroke-width="1.5"/>
+      </g>
+      <circle cx="0" cy="0" r="1" stroke="#ffffff" stroke-width="2" fill="none" style="animation:ripple 4s ease-out 0s infinite;"/>
+      <circle cx="0" cy="0" r="1" stroke="#ffffff" stroke-width="2" fill="none" style="animation:ripple 4s ease-out 1.2s infinite;"/>
+    </g>
+    
+        <g transform="translate(465,72.0) scale(0.892621056322008)" style="animation: fall 13.1s linear 3.3s infinite;">
+          <path d="M0 0 C 10 -4, 16 -4, 24 0 C 18 8, 6 10, 0 0 Z" fill="#c7e0a0" stroke="#0B132B" stroke-width="0.6" opacity=".7"/>
+        </g>
+
+        <g transform="translate(570,72.0) scale(0.9322530766241104)" style="animation: fall 15.9s linear 7.9s infinite;">
+          <path d="M0 0 C 10 -4, 16 -4, 24 0 C 18 8, 6 10, 0 0 Z" fill="#9fd39b" stroke="#0B132B" stroke-width="0.6" opacity=".7"/>
+        </g>
+
+        <g transform="translate(503,72.0) scale(0.7652394544473473)" style="animation: fall 12.0s linear 4.0s infinite;">
+          <path d="M0 0 C 10 -4, 16 -4, 24 0 C 18 8, 6 10, 0 0 Z" fill="#d1b38a" stroke="#0B132B" stroke-width="0.6" opacity=".7"/>
+        </g>
+
+        <g transform="translate(887,72.0) scale(0.8997337829208771)" style="animation: fall 12.6s linear 7.5s infinite;">
+          <path d="M0 0 C 10 -4, 16 -4, 24 0 C 18 8, 6 10, 0 0 Z" fill="#a4c7b3" stroke="#0B132B" stroke-width="0.6" opacity=".7"/>
+        </g>
+
+        <g transform="translate(603,72.0) scale(1.0857429633262365)" style="animation: fall 13.7s linear 7.4s infinite;">
+          <path d="M0 0 C 10 -4, 16 -4, 24 0 C 18 8, 6 10, 0 0 Z" fill="#c7e0a0" stroke="#0B132B" stroke-width="0.6" opacity=".7"/>
+        </g>
+
+        <g transform="translate(961,72.0) scale(0.6238490415344837)" style="animation: fall 13.3s linear 4.9s infinite;">
+          <path d="M0 0 C 10 -4, 16 -4, 24 0 C 18 8, 6 10, 0 0 Z" fill="#9fd39b" stroke="#0B132B" stroke-width="0.6" opacity=".7"/>
+        </g>
+
+        <g transform="translate(1146,72.0) scale(1.0541713332114733)" style="animation: fall 15.8s linear 5.6s infinite;">
+          <path d="M0 0 C 10 -4, 16 -4, 24 0 C 18 8, 6 10, 0 0 Z" fill="#d1b38a" stroke="#0B132B" stroke-width="0.6" opacity=".7"/>
+        </g>
+
+        <g transform="translate(175,72.0) scale(1.1722566102588527)" style="animation: fall 12.5s linear 1.2s infinite;">
+          <path d="M0 0 C 10 -4, 16 -4, 24 0 C 18 8, 6 10, 0 0 Z" fill="#a4c7b3" stroke="#0B132B" stroke-width="0.6" opacity=".7"/>
+        </g>
+    <rect y="446.4" width="100%" height="273.6" fill="#ffffff" opacity="0.06"/>
+    </svg>

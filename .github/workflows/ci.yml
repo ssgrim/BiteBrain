@@ -1,0 +1,43 @@
+name: ci
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+      - run: pnpm -v
+      - run: pnpm install --frozen-lockfile=false
+      # Fix react-native-screens build issue in CI
+      - run: pnpm add -g @react-native-community/bob || true
+      - run: pnpm -w lint
+      - name: Run tests
+        run: pnpm test
+
+      - name: Check repository size
+        run: |
+          echo "📊 Repository Size Analysis"
+          echo "=========================="
+          du -sh . node_modules .git 2>/dev/null | head -10
+          echo ""
+          echo "🔍 Large files (>5MB):"
+          find . -type f -size +5M -not -path "./node_modules/*" -not -path "./.git/*" -exec ls -lh {} \; | head -10 || echo "No large files found"
+          echo ""
+          REPO_SIZE_KB=$(du -s . | cut -f1)
+          if [ $REPO_SIZE_KB -gt 1048576 ]; then
+            echo "⚠️ Warning: Repository is larger than 1GB (excluding node_modules)"
+          else
+            echo "✅ Repository size is within acceptable limits"
+          fi
+      - run: pnpm -w build
