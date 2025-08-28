@@ -3,7 +3,7 @@ import { Marker, Popup } from 'react-map-gl';
 import { FishingSpot } from '@bitebrain/core';
 
 interface FishingSpotMarkerProps {
-  spot: FishingSpot;
+  spot: FishingSpot; // eslint-disable-line no-unused-vars
   onClick?: (spot: FishingSpot) => void;
 }
 

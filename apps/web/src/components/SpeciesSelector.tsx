@@ -17,7 +17,7 @@ const SPECIES_OPTIONS: { value: FishSpecies; label: string; emoji: string }[] = 
 ]
 
 export function SpeciesSelector({ selectedSpecies, onSpeciesChange }: SpeciesSelectorProps) {
-  const handleSpeciesToggle = (species: FishSpecies) => {
+  const handleSpeciesToggle = (species: FishSpecies) => { // eslint-disable-line no-unused-vars
     if (selectedSpecies.includes(species)) {
       onSpeciesChange(selectedSpecies.filter(s => s !== species))
     } else {

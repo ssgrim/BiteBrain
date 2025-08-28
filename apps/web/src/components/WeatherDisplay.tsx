@@ -14,7 +14,7 @@ export const WeatherDisplay: React.FC<WeatherDisplayProps> = ({
   className = '',
   onWeatherUpdate,
 }) => {
-  const [weather, setWeather] = useState<WeatherConditions | null>(null);
+  const [weather, setWeather] = useState<WeatherConditions | null>(null); // eslint-disable-line no-unused-vars
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);

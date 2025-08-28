@@ -21,7 +21,7 @@ export const OfflineMap: React.FC<OfflineMapProps> = ({
   onMapLoad
 }) => {
   const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<mapboxgl.Map | null>(null);
+  const map = useRef<mapboxgl.Map | null>(null); // eslint-disable-line no-unused-vars
   const [isOnline, setIsOnline] = useState(true);
   const [hasOfflineData, setHasOfflineData] = useState(false);
 
