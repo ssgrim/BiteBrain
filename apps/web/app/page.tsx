@@ -5,7 +5,9 @@ import { recommend, type Conditions, type FishSpecies } from '@bitebrain/core'
 import { MapView } from '../src/components/MapView'
 import { WeatherDisplay } from '../src/components/WeatherDisplay'
 import { SolunarCalendar } from '../src/components/SolunarCalendar'
+import { WaterTempDisplay } from '../src/components/WaterTempDisplay'
 import { SpeciesSelector } from '../src/components/SpeciesSelector'
+import { AnimatedLogo } from '../src/components/AnimatedLogo'
 
 interface Recommendation {
   pattern: string
@@ -72,8 +74,9 @@ export default function HomePage() {
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 p-8">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            🎣 BiteBrain
+          <h1 className="text-4xl font-bold text-gray-900 mb-2 flex items-center justify-center gap-3">
+            <AnimatedLogo />
+            BiteBrain
           </h1>
           <p className="text-lg text-gray-600">
             AI-powered fishing recommendations based on real-time conditions

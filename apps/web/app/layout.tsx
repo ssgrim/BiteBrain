@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'BiteBrain - AI Fishing Assistant',
   description: 'AI that fuses local weather, seasonal bite patterns, and your tackle inventory to recommend where/when/what to fish',
+  icons: {
+    icon: '/assets/icons/zombie-fish-badge.svg',
+  },
 }
 
 export default function RootLayout({
